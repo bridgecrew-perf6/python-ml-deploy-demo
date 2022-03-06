@@ -1,4 +1,4 @@
-NAMESPACE=fraud-detector
+NAMESPACE=fraud-detector-model
 
 oc new-project $NAMESPACE
 
