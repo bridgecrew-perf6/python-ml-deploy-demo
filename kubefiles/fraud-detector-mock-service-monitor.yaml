@@ -1,0 +1,12 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: fraud-detector-api-monitor
+spec:
+  endpoints:
+    - interval: 10s
+      port: 8080-tcp
+      scheme: http
+  selector:
+    matchLabels:
+      app: fraud-detector-api

@@ -704,7 +704,7 @@ spec:
             {
               "$$hashKey": "object:638",
               "exemplar": true,
-              "expr": "rate(process_cpu_seconds_total{job=\"python-basic\"}[1m])",
+              "expr": "rate(process_cpu_seconds_total{job=\"fraud-detector-api\"}[1m])",
               "format": "time_series",
               "interval": "",
               "intervalFactor": 1,
@@ -804,7 +804,7 @@ spec:
             {
               "$$hashKey": "object:638",
               "exemplar": true,
-              "expr": "rate(process_resident_memory_bytes{job=\"python-basic\"} [1m])",
+              "expr": "rate(process_resident_memory_bytes{job=\"fraud-detector-api\"} [1m])",
               "format": "time_series",
               "interval": "",
               "intervalFactor": 1,
