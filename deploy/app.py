@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask,request
 from waitress import serve
 from prometheus_flask_exporter import PrometheusMetrics
 
