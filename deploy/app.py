@@ -16,7 +16,7 @@ def hello():
 @app.route('/setFraudPercentage')
 def setFraudPercentage():
 	percentage = int(request.args.get('value'))
-	return "Hello World!"
+	return "OK"
 
 
 @app.route('/predict')
