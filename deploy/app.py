@@ -12,10 +12,12 @@ percentage=1
 def hello():
     return "Hello World!"
 
+
 @app.route('/setFraudPercentage')
 def setFraudPercentage():
-	percentage= request.args.key("value")
-    return "Fraud percentage changed"
+	percentage = int(request.args.get('value'))
+	return "Hello World!"
+
 
 @app.route('/predict')
 @metrics.counter('predict', 'Number of prediction',
